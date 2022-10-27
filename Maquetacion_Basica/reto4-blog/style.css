@@ -1,0 +1,118 @@
+*{
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* tamaño de la pantalla principal */
+}
+
+main{
+    display:flex;
+    flex-direction: column; 
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+/* MENÚ TOP */
+nav{
+    background-color: black;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    height: 5vh;
+}
+    .nav{
+
+        width: 60%;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+    }
+        .link{
+            color: aliceblue;
+        }
+
+    /* .menu_item{
+        background-color: black;
+        display: flex;
+        width: 25.33%;
+        justify-content: center;
+    }
+    
+
+        .menu_name{
+            color: white;
+            text-decoration: none;
+        } */
+/* Intentando mantener el texto blanco en los enlaces... sin éxito. */
+        menu_name.a {
+            color: white;
+            text-decoration: none;  
+        } 
+
+/* Título a pantalla completa */
+.full-width-title{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-start
+}
+
+/* CONTENIDO PRINCIPAL A DOS COLUMNAS*/
+.main_content{
+    display: flex;
+    flex-wrap: wrap;
+    gap:2%;
+    height: 80vh;
+    width: 100%;
+    align-items: center;
+    padding: 5px;
+
+}
+/* Columna artículo*/
+    .article{
+        display: flex;
+        flex-direction: column;
+        width: 45%;
+        padding: 15px;
+        
+    }
+/* Columna post de blog*/
+    .blogpost{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 45%;
+        padding: 15px;
+
+        
+    }
+/* Columna imagen*/
+    .image_container{
+        display: flex;
+        justify-content: center;
+        width: 45%;
+
+    }
+
+        .image_container img{
+            max-width: 100%;
+        }
+
+
+
+/* GALERÍA DE IMÁGENES*/
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+
+}
+
+.gallery_img{
+    display: flex;
+    width: 33.3%;
+}
