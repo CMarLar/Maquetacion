@@ -1,3 +1,21 @@
+/* ANIMACIONES */
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+/* sintaxis de variable en css. Keyframes hace referencia a los fotogramas de la animación. Funciona como en premiere.
+coge un elemento y lo traslada a lo largo del eje y desde fuera de la pantalla (-100) a su lugar (0). */
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+    }
+
+/* ESTILOS */
 *{
     text-decoration: none;
     padding: 0;
@@ -12,7 +30,6 @@ body{
     width: 100vw;
     height: 100vh;
     align-items: center;
-    border: 2px solid blue;
     background-image: url(img/computers.jpg);
     background-size:cover;
 }
@@ -23,11 +40,11 @@ main{
     width: 100%;
     height: 100%;
     align-items: center;
-    border: 2px solid yellow;
     background-color: rgb(13, 5, 18, 0.8);
 }
 
 nav{
+    animation: 1s slideInFromLeft;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -38,14 +55,12 @@ nav{
     left: 0px;
     background-image: url(img/code_small.jpg);
     background-size:contain;
-    border: 2px solid red;
 }
 
     .logo{
         position: absolute;
         top: center;
         left: 0px;
-        border: 2px solid green;
         margin-left: 3%;
         font-size: 180%;
         background-color: black;
@@ -65,12 +80,28 @@ nav{
 
     }
 
+footer{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 50px;
+    gap: 20px;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgb(47, 79, 79,0.8);
+    font-size: 200%;
+}
+
 .main_content{
+    animation-name: fadeIn;
+    animation-duration: 3s;
     margin-top: 150px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 2px solid green;
     width: 100%;
 }
 
@@ -83,7 +114,7 @@ nav{
         padding: 20px;
         width: 30%;
         height: 100%;
-        border: 2px solid red;
+        background-color: rgb(13, 5, 18, 0.8);
     }
         .introduction h1 span{
             font-family: monaco,Consolas,Lucida Console,monospace;
@@ -93,3 +124,184 @@ nav{
             font-family: monaco,Consolas,Lucida Console,monospace;
         }
 
+        .social_mini{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .social_mini img:hover{
+                transform:scale(1.5);
+                transition: transform 0.5s;
+        }
+
+.tech_container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 800px;
+    background-color: rgba(255, 255, 255, 0.7);
+    gap: 10px;
+    }
+
+    .tech_container p{
+        color: black;
+    }
+    .tech_container h1{
+        color: black;
+    }
+    .tech_container h2{
+        color: black;
+    }
+    .tech_container h3{
+        color: rgb(255, 255, 255);
+        background-color: black;
+        font-family: monaco,Consolas,Lucida Console,monospace;
+        text-align: center;
+    }
+
+    .title_tech_container{
+        position: absolute;
+        top: 400px;
+    }
+        .title_tech_container h1{
+            font-family: monaco,Consolas,Lucida Console,monospace;
+        }
+
+    .tech{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    width: 20%;
+    border: 2px dotted grey;
+    }
+
+    .tech:hover{
+        transform:scale(1.5);
+        background-color: rgb(255, 255, 255,0.8);
+        transition: background-color 0.5s;
+        transition: transform 0.5s;
+    }
+
+    .tech_logo{
+        display: flex;
+    }
+
+    .tech_desc{
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+    }
+
+.project_container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.7);
+    gap: 30px;
+    }
+
+
+    .project{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        width: 70%;
+        padding: 20px;
+        gap: 10px;
+        border-bottom: dotted grey;
+    }
+
+        .project_title h1{
+            font-family: monaco,Consolas,Lucida Console,monospace;
+            background-color: black;
+            color: white;
+        }
+
+        .project_desc h2{
+            font-family: monaco,Consolas,Lucida Console,monospace;
+            background-color: black;
+            color: white;
+        }
+
+        .project_desc p{
+            color: black;
+        }
+
+        .project_gallery{
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            position: relative;
+            top:50%;
+            bottom: 50%;
+            left: 50%;
+            right: 50%;
+
+        }
+
+            .project_gallery img{
+                width: 200px;
+            }
+
+        .project_icons{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+            .project_icons img{
+                width: 80px;
+            }
+
+        .project_link{
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+            position: relative;
+        }
+
+        .project_link span{
+            font-family: monaco,Consolas,Lucida Console,monospace;
+            background-color: black;
+            color: white;
+            font-size: 150%;
+        }
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 15px;
+}
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 5px;
+    }
+    .form h1{
+        font-family: monaco,Consolas,Lucida Console,monospace;
+        background-color: black;
+        color: white;
+    }
+    .sendButton{
+        font-family: monaco,Consolas,Lucida Console,monospace;
+        background-color: black;
+        color: white;
+        font-size: 200%;
+    }
