@@ -1,0 +1,95 @@
+*{
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: aliceblue;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    border: 2px solid blue;
+    background-image: url(img/computers.jpg);
+    background-size:cover;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    border: 2px solid yellow;
+    background-color: rgb(13, 5, 18, 0.8);
+}
+
+nav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-image: url(img/code_small.jpg);
+    background-size:contain;
+    border: 2px solid red;
+}
+
+    .logo{
+        position: absolute;
+        top: center;
+        left: 0px;
+        border: 2px solid green;
+        margin-left: 3%;
+        font-size: 180%;
+        background-color: black;
+        padding: 10px;
+    }
+
+    .menulink:hover{
+        color: rgb(242, 158, 71);
+        font-family: monaco,Consolas,Lucida Console,monospace;
+    }
+
+    nav a{
+        padding-right:20px;
+        padding-left:20px;
+        background-color: black;
+        font-size: 150%;
+
+    }
+
+.main_content{
+    margin-top: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid green;
+    width: 100%;
+}
+
+    .introduction{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 5%;
+        padding: 20px;
+        width: 30%;
+        height: 100%;
+        border: 2px solid red;
+    }
+        .introduction h1 span{
+            font-family: monaco,Consolas,Lucida Console,monospace;
+            color:rgb(41, 170, 190);
+        }
+        .introduction h2{
+            font-family: monaco,Consolas,Lucida Console,monospace;
+        }
+
