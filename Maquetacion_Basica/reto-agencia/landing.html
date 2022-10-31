@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Satisfy&display=swap" rel="stylesheet">
+    <title>Agencia de Viajes</title>
+</head>
+<body>
+<main>
+    <header class="main_header">
+        <div class="logo"><img src="img/logo.png" alt=""></div>
+        <h1>Viajes Balconing |</h1>
+        <h2>Vuela con nosotros, aterriza por tu cuenta</h2>
+    </header>
+
+    <article class="main_description">
+        <p>Atrévete a dar el salto. Los destinos más impactantes de España, a tu alcance.</p>
+    </article>
+    <div class="separator"></div>
+    <div class="travelcards">
+        <div class="card">
+            <div class="card_img">
+                <img src="img/canarias.jpg" alt="">
+            </div>
+
+            <div class="card_desc">
+                <h1 class="card_desc_title">Canarias</h1><br>
+                <p class="card_desc_body">La experiencia más extrema. ¿No tienes suficiente con los balcones de los increíbles resorts 5 estrellas repartidos por todas las islas? Prueba a hacer Balconing desde el pico más alto de España. Xtreme gilipolling!</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card_img">
+                <img src="img/galicia.jpg" alt="">
+            </div>
+
+            <div class="card_desc">
+                <h1 class="card_desc_title">Galicia</h1><br>
+                <p class="card_desc_body">La hermosa tierra galega nos ofrece una modalidad que está causando furor y que aúna dos pasiones: la naturaleza y saltar sin protección de ningún tipo desde sitios muy altos. Practica el barranquing en las bravas aguas del Atlántico.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card_img">
+                <img src="img/mallorca.jpg" alt="">
+            </div>
+
+            <div class="card_desc">
+                <h1 class="card_desc_title">Mallorca</h1><br>
+                <p class="card_desc_body">El primer lugar le viene a la cabeza a cualquier britano cuando piensa en Balconing es Mallorca. Por algo será. La isla ofrece incontables lugares desde los cuales practicar el deporte rey de ingleses y alemanes en balcones reglamentarios aprobados por la Federación Mallorquina de Balconing. ¡La experiencia más auténtica!</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="form_container">
+        <div class="form_title"><h1>Solicita información</h1></div>
+        <div class="form">
+            <form action="">
+                <input type="text" label="name" placeholder="Nombre y apellidos" id="formName"><br><br>
+                <input type="text" label="origin" placeholder="Origen" id="formOrigin"><br><br>
+                <input type="text" label="destination" placeholder="Destino" id = formDestination><br><br>
+                <input type="text" label="numPeople" placeholder="Número de personas" id="formNumPeople"><br><br>
+                <input type="text" label="date" placeholder="Fecha" id="formDate"><br><br>
+                <input type="button" class="Button1" onclick=createTravel() value="Enviar info"><br><br>
+                <input type="button" class="Button2" onclick=filterTravels() value="Filtrar"><br>
+
+            </form>
+        </div>
+    </div>
+    <div class="filter_results">
+        <h2>Viajes filtrados: </h2><p id="filteredTravels"></p>
+    </div>
+
+
+
+<!-- 
+
+    <div class="buttons_container">
+        <button type="button" class="goToForm" style="background-color: green; color: white; ">Enviar información</button>
+
+        <button type="button" class="filter" style="background-color: blue; color: white;">Filtrar</button>
+
+    </div> -->
+</main>
+<!--scripts aquí -->
+<script src="index.js"></script>
+</body>
+</html>
