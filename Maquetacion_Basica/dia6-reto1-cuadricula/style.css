@@ -1,0 +1,41 @@
+.grid{
+    display: grid;
+    grid-template-columns: 800px 400px 800px;
+    grid-template-rows: 500px 500px;
+}
+
+.a{
+    background-color: yellowgreen;
+    text-align: center;
+    color: white;
+}
+
+.b{
+    background-color: orange;
+    text-align: center;
+    color: white;
+}
+
+.c{
+    background-color: orangered;
+    text-align: center;
+    color: white;
+}
+
+.d{
+    background-color: red;
+    text-align: center;
+    color: white;
+}
+
+.e{
+    background-color: blue;
+    text-align: center;
+    color: white;
+}
+
+.f{
+    background-color: yellow;
+    text-align: center;
+    color: white;
+}

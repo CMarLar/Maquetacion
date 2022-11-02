@@ -31,11 +31,14 @@ function createTravel(){
 
 
 function filterTravels(){
+document.getElementById("filteredTravels").innerHTML = "";
 for (let i = 0; i < travelArrays.length; i++) {
-    if((travelArrays[i].destination == "Mallorca" || travelArrays[i].destination == "mallorca") || (travelArrays[i].destination == "Galicia" || travelArrays[i].destination == "galicia") || (travelArrays[i].destination == "Canarias" || travelArrays[i].destination == "canarias")){
+    if(travelArrays[i].destination.toLowerCase() == "mallorca" ||
+       travelArrays[i].destination.toLowerCase() == "galicia"  ||
+       travelArrays[i].destination.toLowerCase() == "canarias"){
         //console.log(travelArrays[i]);//Descomentar para ver por consola.
         
-        let getMessage = document.getElementById("filteredTravels").innerHTML = 
+        document.getElementById("filteredTravels").innerHTML += 
         "Nombre: " + travelArrays[i].name + "\n" + 
         "Origen: " + travelArrays[i].origin + "\n" +
         "Destino: " + travelArrays[i].destination + "\n" +

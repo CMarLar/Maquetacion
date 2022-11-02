@@ -1,0 +1,11 @@
+.grid{
+    display: grid;
+    width: 100vh;
+
+    grid-template-columns: [y0] 100vh [y1] ;
+    grid-template-rows: [x0] 20px [xy];
+}
+
+.header{
+    background-color: black;
+}
