@@ -1,0 +1,42 @@
+.grid{
+    display: grid;
+    height: 100%;
+    grid-template-columns: 2fr 1fr 2fr 2fr 1fr 2fr;
+    grid-template-rows: 70vh 30vh;
+}
+
+.a{
+    background-color: chartreuse;
+    text-align: center;
+    color: black;
+}
+
+.b{
+    background-color: black;
+    text-align: center;
+    color: white;
+}
+
+.c{
+    background-color: chartreuse;
+    text-align: center;
+    color: black;
+}
+
+.d{
+    background-color: black;
+    text-align: center;
+    color: white;
+}
+
+.e{
+    background-color: chartreuse;
+    text-align: center;
+    color: black;
+}
+
+.f{
+    background-color: black;
+    text-align: center;
+    color: white;
+}
