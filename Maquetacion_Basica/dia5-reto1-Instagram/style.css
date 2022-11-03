@@ -23,20 +23,23 @@ main{
     align-items: center;
     gap: 10%;
     height: 70%;
-    width: 3    0%;
+    width: 50%;
     padding-right: 15px;
+    border: 2px solid black
 }
 
 .mockup{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: flex-end;
-    height: 125%;
-    width: 40%;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+    border: 2px solid blue;
 }
     .mockup img{
-        height: 100%;
+        width: 115%;
+        border: 2px solid red;
     }
 
 .form{
@@ -45,9 +48,9 @@ main{
     align-items: center;
     justify-content: flex-start;
     gap: 20px;
-    width: 100%;
+    width: 50%;
     height: 100%;
-    margin-top: 20px;
+    border: 2px solid green;
 }
 
     .form1{
