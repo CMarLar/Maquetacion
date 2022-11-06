@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Llamada a funciones js -->
+    <script src="index.js"></script>
+</head>
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="img/nash!.png" alt="" width="35px"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Últimas llegadas</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Categorías
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">Disabled</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+            <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#staticBackdrop" onclick="showCart()">
+                Carrito
+            </button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+<!-- Cuerpo de la tienda -->
+
+<div class="container">
+
+    <div class="row mt-5">
+
+    <div class="col">
+    <div class="card" style="width: 18rem;">
+        <img src="img/pantalon_ancho.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title" id="product1">Pantalón Ancho</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <span class="price" id="product1_price">120</span><span>€</span><br><br>
+          <a href="#" class="btn btn-dark" id="add_product_1" onclick="getItem1()">Añadir al carrito</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+        <div class="card" style="width: 18rem;" >
+            <img src="img/cardigan_largo_rayas.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title" id="product2">Cardigan largo a rayas</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <span class="price" id="product2_price">129</span><span>€</span><br><br>
+              <a href="#" class="btn btn-dark"onclick="getItem2()">Añadir al carrito</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+            <div class="card" style="width: 18rem;" >
+                <img src="img/falda_mini_zebra.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title" id="product3">Minifalda zebra</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <span class="price" id="product3_price">89</span><span>€</span><br><br>
+                  <a href="#" class="btn btn-dark"onclick="getItem3()">Añadir al carrito</a>
+                </div>
+              </div>
+            </div>
+
+    <div class="col">
+        <div class="card" style="width: 18rem;" >
+            <img src="img/falda_print.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title" id="product4">Falda Print</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <span class="price" id="product4_price">89</span><span>€</span><br><br>
+              <a href="#" class="btn btn-dark"onclick="getItem4()">Añadir al carrito</a>
+            </div>
+          </div>
+        </div>
+
+        </div>
+
+        <div class="row mt-5">
+
+            <div class="col">
+            <div class="card" style="width: 18rem;" >
+                <img src="img/mono_overol.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title" id="product5">Mono Overol</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <span class="price" id="product5_price">115</span><span>€</span><br><br>
+                  <a href="#" class="btn btn-dark"onclick="getItem5()">Añadir al carrito</a>
+                </div>
+              </div>
+            </div>
+        
+            <div class="col">
+                <div class="card" style="width: 18rem;" >
+                    <img src="img/pantalones_tallealto.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title" id="product6">Pantalón de talle</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <span class="price" id="product6_price">89</span><span>€</span><br><br>
+                      <a href="#" class="btn btn-dark"onclick="getItem6()">Añadir al carrito</a>
+                    </div>
+                  </div>
+                </div>
+        
+                <div class="col">
+                    <div class="card" style="width: 18rem;" >
+                        <img src="img/vestido_jersey.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title" id="product7">Vestido jersey</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <span class="price" id="product7_price">189</span><span>€</span><br><br>
+                          <a href="#" class="btn btn-dark"onclick="getItem7()">Añadir al carrito</a>
+                        </div>
+                      </div>
+                    </div>
+        
+            <div class="col">
+                <div class="card" style="width: 18rem;" >
+                    <img src="img/vestido_tunico.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title" id="product8">Vestido tunico</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <span class="price" id="product8_price">250</span><span>€</span><br><br>
+                      <a href="#" class="btn btn-dark"onclick="getItem8()">Añadir al carrito</a>
+                    </div>
+                  </div>
+                </div>
+        
+        
+                </div>
+
+
+</div>
+
+
+
+
+
+<!-- Modal Carrito -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Carrito</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" id="modal">
+        
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Understood</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+    <!-- JS Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+</body>
+</html>
