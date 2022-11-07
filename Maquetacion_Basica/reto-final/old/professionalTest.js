@@ -1,0 +1,15 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var professional_1 = require("./professional");
+var daniel = new professional_1.Professional("Daniel Brühl", 44, 80, 1.76, false, "spanish", 0, "actor");
+var arnold = new professional_1.Professional("Arnold Schwarzenegger", 75, 113, 1.88, false, "american", 0, "actor/productor");
+var chris = new professional_1.Professional("Chris Hemsworth", 39, 95, 1.91, false, "australian", 0, "actor/productor");
+var kurt = new professional_1.Professional("Kurt Russell", 71, 98, 1.76, false, "american", 0, "actor");
+var linda = new professional_1.Professional("Linda Hamilton", 66, 80, 1.68, false, "american", 0, "actor");
+var kenneth = new professional_1.Professional("Kenneth Branagh", 61, 84, 1.77, false, "english", 1, "productor/guionista");
+var ron = new professional_1.Professional("Ron Howard", 68, 77, 1.75, false, "american", 2, "director/productor");
+var jhon = new professional_1.Professional("John Carpenter", 74, 91, 1.83, true, "american", 0, "director/guionista");
+var anthony = new professional_1.Professional("Anthony Russo", 52, 64, 1.74, false, "american", 0, "director/productor");
+var joseph = new professional_1.Professional("Joseph V. Russo", 51, 78, 1.70, false, "american", 0, "director/productor");
+var james = new professional_1.Professional("James Cameron", 68, 86, 1.88, false, "canadian", 3, "director/productor");
+daniel.information();

@@ -1,0 +1,25 @@
+{
+  "name": "imdb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "IMDB.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CMarLar/IMDB.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CMarLar/IMDB/issues"
+  },
+  "homepage": "https://github.com/CMarLar/IMDB#readme",
+  "devDependencies": {
+    "@types/node": "^18.11.5"
+  },
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}
