@@ -182,7 +182,6 @@ nav{
     }
 
     .gallery{
-        padding-top: 300px;
         flex-direction: column;
         flex-wrap: nowrap;
     
